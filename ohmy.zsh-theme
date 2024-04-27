@@ -1,3 +1,4 @@
+# local's
 local current_dir="%B%F{green}%~%f%b"
 local git_branch='$(git_prompt_info)'
 local time='%B%F{green}%*%f%b'
@@ -18,8 +19,7 @@ ZSH_THEME_GIT_PROMPT_CLEAN=' %F{red} '
 ZSH_THEME_GIT_PROMPT_ADDED="%{$fg[green]%} "
 ZSH_THEME_GIT_PROMPT_MODIFIED="%{$fg[green]%} 󰛞"
 
+# prompt
 PROMPT="%F{green}󰌽 ${time} ${git_status} %f
 %F{red}╭─%F{$reset_color%} %F{green}${current_dir}%F{$reset_color}%F{red} ${git_branch}%F{$reset_color}
 %F{red}╰─➤ %f" 
-
-RPROMPT=" "
